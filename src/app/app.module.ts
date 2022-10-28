@@ -7,12 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from '../Material-Module'
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ModalpopupComponent } from './modalpopup/modalpopup.component';
+import { PopupComponent } from './modals/popup.component';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModalpopupComponent
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,8 @@ import { ModalpopupComponent } from './modalpopup/modalpopup.component';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule
 
   ],
   providers: [],
