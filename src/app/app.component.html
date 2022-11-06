@@ -47,15 +47,15 @@
         <google-chart #chart3
         [title]="title"
         [type]="type"
-        [data]="timeData"
-        [columns]="timeCols"
-        [options]="timeOptions"
+        [data]="tableData"
+        [columns]="tableCols"
+        [options]="tableOptions"
         [width]="width"
         [height]="height"
-        (select)="onTimelineSelect($event)">
+        (select)="onTableSelect($event)">
       </google-chart>
     </div>
-    <button style="left: 50%" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Second</button>
+    <button style="margin-left: 180px; margin-top: 20px;" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Second</button>
 </div>
 
     <div class="container" style="margin-top: 100px;" *ngIf="showFourth">

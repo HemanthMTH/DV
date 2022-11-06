@@ -7,8 +7,9 @@ import { Tweet } from './models/tweet';
 //import jsonData from '../../src/assets/data/tweets.json';
 
 import tweetJson from '../../src/assets/apiData/tweets.json';
-//import conversationJson from '../../src/assets/apiData/conversations.json';
-//import metricJson from '../../src/assets/apiData/metrics.json';
+
+import conversationJson from '../../src/assets/apiData/conversations.json';
+import metricJson from '../../src/assets/apiData/metrics.json';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,10 @@ export class AppComponent implements OnInit {
   tweets : Tweet[] = [];
   domains: string[] = [];
   uniqueDomains: string[] = [];
-  tweetsByLocation: Row[] = []
+  tweetsByLocation: Row[] = [];
+  currentDomain: string;
+  currentLocation: string;
+  currentTweet: Tweet;
 
   title = 'Spam Tweets Distribution';
   type = ChartType.TreeMap;
@@ -52,23 +56,19 @@ export class AppComponent implements OnInit {
   gaugeCols = ['Label', 'Value']
 
   gaugeOptions = {
-    width: 800, height: 300,
+    width: 1000, height: 350,
     greenFrom: 0,
-    greenTo: 1,
-    redFrom: 2.5,
-    redTo: 5,
-    yellowFrom: 1,
-    yellowTo: 2.5,
-    minorTicks: 1, 
+    greenTo: 20,
+    redFrom: 50,
+    redTo: 100,
+    yellowFrom: 20,
+    yellowTo: 50,
+    minorTicks: 5, 
   };
 
-  timeData =  [
-    [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
-    [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
-    [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]
-  ];
-  timeCols = ['President', 'Start', 'End']
-  timeOptions = {};
+  tableData : Row[] = []
+  tableCols = ['S.NO', 'Tweet']
+  tableOptions = {};
 
 
   private barData = [
@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog){
       tweetJson.forEach(element => {
         this.tweets.push(new Tweet(
-          element.id, element.author_id, element.conversation_id, element.text, element.domains, element.country))
+          element.id, element.author_id, element.conversation_id, element.text, element.domains, element.country, new Date(element.created_at)))
       });
       this.tweets.forEach(t => {
         t.domains.forEach(d => {
@@ -109,12 +109,12 @@ export class AppComponent implements OnInit {
    }
 
   generateGeoData(param: any): void {
-      const domainName = String(this.treeMapData[param.selection[0].row][0]);
+      this.currentDomain = String(this.treeMapData[param.selection[0].row][0]);
       const locations: string[] = []
 
       this.tweets.forEach((t) => { 
           t.domains.forEach(d => {
-            if(d == domainName){
+            if(d == this.currentDomain){
               locations.push(t.location)
             }
           });
@@ -127,20 +127,39 @@ export class AppComponent implements OnInit {
 
   onGeoSelect(params: any): void {
     this.showThird = true;
-    this.type = ChartType.Timeline
-    console.log(params)
+    this.type = ChartType.Table
+    this.generateTableData(params)
+   }
+
+   generateTableData(param: any): void {
+    this.currentLocation = String(this.tweetsByLocation[param.selection[0].row][0]);
+    const filteredTweets = this.tweets.filter(t => t.location === this.currentLocation && t.domains
+                              .some(d => d === this.currentDomain))
+    
+    filteredTweets.forEach((t, index) => {
+        this.tableData.push([
+          index + 1, t.text]);
+      });
    }
   
-  onTimelineSelect(params: any): void {
+   onTableSelect(params: any): void {
     this.showFourth = true;
     this.type = ChartType.Gauge
-    console.log(params)
+    this.generateGaugeData(params)
+   }
+
+   generateGaugeData(param: any): void {
+    const tweet = this.tableData[param.selection[0].row][1];
+    this.currentTweet = this.tweets.filter(t =>  t.location === this.currentLocation && t.domains
+              .some(d => d === this.currentDomain) && t.text === tweet)[0]
+    console.log(this.currentTweet, metricJson)
+    // metricJson[this.currentTweet.id]
    }
   
 
   goBackToThird(): void{
     this.showFourth = false;
-    this.type = ChartType.Timeline
+    this.type = ChartType.Table
   }
 
   goBackToSecond(): void{

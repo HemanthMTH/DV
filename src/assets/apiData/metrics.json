@@ -1,142 +1,156 @@
 {
-    "24809600": {
-        "fake_follower": 1.49,
-        "financial": 0.43,
-        "overall": 1.31,
-        "self_declared": 1.79,
-        "spammer": 4.16
+    "1576725924002746369": {
+        "fake_follower": 3.36,
+        "financial": 2.3,
+        "overall": 4.05,
+        "self_declared": 3.75,
+        "spammer": 0.63
     },
-    "840234788": {
-        "fake_follower": 0.91,
-        "financial": 0.66,
-        "overall": 0.93,
-        "self_declared": 0.58,
-        "spammer": 2.5
+    "1576303641803329537": {
+        "fake_follower": 2.36,
+        "financial": 1.9,
+        "overall": 2.21,
+        "self_declared": 1.64,
+        "spammer": 3.9
     },
-    "1314457819597463552": {
-        "fake_follower": 4.25,
-        "financial": 4.3,
-        "overall": 4.74,
-        "self_declared": 4.36,
-        "spammer": 4.45
-    },
-    "212321156": {
-        "fake_follower": 4.92,
-        "financial": 3.31,
-        "overall": 0.08,
-        "self_declared": 3.33,
-        "spammer": 4.37
-    },
-    "277667786": {
-        "fake_follower": 1.33,
-        "financial": 2.65,
-        "overall": 2.11,
-        "self_declared": 3.04,
-        "spammer": 2.12
-    },
-    "955457128063471616": {
-        "fake_follower": 2.8,
-        "financial": 3.34,
-        "overall": 2.69,
-        "self_declared": 4.89,
-        "spammer": 0.23
-    },
-    "36870655": {
-        "fake_follower": 2.7,
-        "financial": 4.89,
-        "overall": 1.57,
-        "self_declared": 4.81,
-        "spammer": 0.9
-    },
-    "1325373512": {
-        "fake_follower": 0.76,
-        "financial": 1.48,
-        "overall": 4.4,
+    "1576458370294611968": {
+        "fake_follower": 2.15,
+        "financial": 4.03,
+        "overall": 0.1,
         "self_declared": 0.29,
-        "spammer": 0.48
+        "spammer": 1.5
     },
-    "1196230915766263808": {
-        "fake_follower": 1.42,
-        "financial": 0.88,
-        "overall": 0.69,
-        "self_declared": 4.91,
-        "spammer": 3.93
+    "63362487": {
+        "fake_follower": 4.1,
+        "financial": 3.42,
+        "overall": 4.78,
+        "self_declared": 1.17,
+        "spammer": 1.71
     },
-    "69426439": {
-        "fake_follower": 1.76,
-        "financial": 3.62,
-        "overall": 1.68,
-        "self_declared": 3.91,
-        "spammer": 4.2
-    },
-    "1092378031": {
-        "fake_follower": 3.44,
-        "financial": 3.7,
-        "overall": 0.64,
-        "self_declared": 4.72,
-        "spammer": 2.93
-    },
-    "1575839385702256640": {
-        "fake_follower": 2.53,
-        "financial": 1.11,
-        "overall": 2.73,
-        "self_declared": 4.11,
-        "spammer": 0.69
-    },
-    "923118211192717312": {
-        "fake_follower": 4.06,
-        "financial": 2.55,
-        "overall": 1.24,
-        "self_declared": 4.55,
-        "spammer": 4.91
-    },
-    "1393512565712592897": {
-        "fake_follower": 4.42,
-        "financial": 3.69,
-        "overall": 1.7,
-        "self_declared": 4.69,
-        "spammer": 2.42
-    },
-    "391886350": {
-        "fake_follower": 3.26,
-        "financial": 0.4,
-        "overall": 0.05,
-        "self_declared": 0.28,
-        "spammer": 2.4
-    },
-    "4876039539": {
-        "fake_follower": 4.2,
-        "financial": 1.75,
-        "overall": 1.09,
-        "self_declared": 2.6,
-        "spammer": 3.61
-    },
-    "1318524347817000960": {
-        "fake_follower": 4.0,
-        "financial": 1.55,
-        "overall": 2.61,
-        "self_declared": 3.19,
+    "1575279405001318401": {
+        "fake_follower": 3.02,
+        "financial": 2.27,
+        "overall": 3.47,
+        "self_declared": 4.84,
         "spammer": 1.45
     },
-    "468646961": {
-        "fake_follower": 3.24,
-        "financial": 2.47,
-        "overall": 4.78,
-        "self_declared": 0.5,
-        "spammer": 1.54
+    "1575282509742755840": {
+        "fake_follower": 0.09,
+        "financial": 0.56,
+        "overall": 0.71,
+        "self_declared": 2.39,
+        "spammer": 1.94
     },
-    "59076885": {
-        "fake_follower": 3.97,
-        "financial": 3.73,
-        "overall": 2.41,
-        "self_declared": 4.86,
-        "spammer": 2.42
+    "1576096927036321792": {
+        "fake_follower": 3.98,
+        "financial": 0.1,
+        "overall": 1.61,
+        "self_declared": 4.97,
+        "spammer": 3.58
     },
-    "2903743244": {
-        "fake_follower": 4.29,
-        "financial": 1.35,
-        "overall": 2.38,
-        "self_declared": 1.12,
-        "spammer": 4.97
+    "61675719": {
+        "fake_follower": 0.99,
+        "financial": 4.25,
+        "overall": 0.69,
+        "self_declared": 2.72,
+        "spammer": 4.0
+    },
+    "21154193": {
+        "fake_follower": 1.24,
+        "financial": 4.44,
+        "overall": 2.74,
+        "self_declared": 3.4,
+        "spammer": 4.77
+    },
+    "1182962602768584714": {
+        "fake_follower": 1.63,
+        "financial": 1.4,
+        "overall": 2.25,
+        "self_declared": 0.16,
+        "spammer": 1.79
+    },
+    "1586180510375714818": {
+        "fake_follower": 3.82,
+        "financial": 1.19,
+        "overall": 3.19,
+        "self_declared": 1.31,
+        "spammer": 1.62
+    },
+    "1084997689140379649": {
+        "fake_follower": 3.54,
+        "financial": 1.86,
+        "overall": 0.42,
+        "self_declared": 0.04,
+        "spammer": 0.67
+    },
+    "1490945140957249536": {
+        "fake_follower": 3.86,
+        "financial": 3.04,
+        "overall": 2.47,
+        "self_declared": 3.86,
+        "spammer": 3.47
+    },
+    "1585781720510795776": {
+        "fake_follower": 2.47,
+        "financial": 4.33,
+        "overall": 3.0,
+        "self_declared": 2.18,
+        "spammer": 5.0
+    },
+    "4531661009": {
+        "fake_follower": 3.87,
+        "financial": 1.45,
+        "overall": 2.71,
+        "self_declared": 2.2,
+        "spammer": 1.93
+    },
+    "1445344287844016128": {
+        "fake_follower": 0.68,
+        "financial": 0.51,
+        "overall": 0.98,
+        "self_declared": 2.53,
+        "spammer": 3.84
+    },
+    "1588732171921068032": {
+        "fake_follower": 1.85,
+        "financial": 3.8,
+        "overall": 4.17,
+        "self_declared": 1.47,
+        "spammer": 4.15
+    },
+    "384498135": {
+        "fake_follower": 3.69,
+        "financial": 3.63,
+        "overall": 0.79,
+        "self_declared": 0.58,
+        "spammer": 1.55
+    },
+    "129374378": {
+        "fake_follower": 3.17,
+        "financial": 1.32,
+        "overall": 3.93,
+        "self_declared": 2.38,
+        "spammer": 3.19
+    },
+    "951522626": {
+        "fake_follower": 4.25,
+        "financial": 2.46,
+        "overall": 3.01,
+        "self_declared": 1.49,
+        "spammer": 3.03
+    },
+    "1588167021958774790": {
+        "fake_follower": 1.8,
+        "financial": 2.24,
+        "overall": 0.78,
+        "self_declared": 4.89,
+        "spammer": 4.92
+    },
+    "1259178474973073409": {
+        "fake_follower": 0.43,
+        "financial": 2.24,
+        "overall": 4.72,
+        "self_declared": 3.74,
+        "spammer": 1.41
     }
 }
