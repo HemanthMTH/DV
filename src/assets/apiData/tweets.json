@@ -1,299 +1,886 @@
 [
     {
-        "id": "1588735962414125056",
-        "author_id": "1576725924002746369",
-        "conversation_id": "1588735962414125056",
-        "text": "Britain loves a bargain, but you don't g\n\n https://t.co/un2fuuNFXl",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T03:32:25.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588735324804390913",
-        "author_id": "1576303641803329537",
-        "conversation_id": "1588735324804390913",
-        "text": "This is part of the involuntary bargain \n\n https://t.co/5UeaYV56iz",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T03:29:53.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588735324024446976",
-        "author_id": "1576458370294611968",
-        "conversation_id": "1588735324024446976",
-        "text": "This is part of the involuntary bargain \n\n https://t.co/UdgkqaSryx",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T03:29:53.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588734256268070913",
-        "author_id": "63362487",
-        "conversation_id": "1588734256268070913",
-        "text": "Aaah spoiler lanjutan bargain betebaran lagii..\nAi blm donlot,\nAndweee..😩\nOff twitter!bye!😤",
-        "geo": "dac23207c12311e2",
-        "created_at": "2022-11-05T03:25:38.000Z",
+        "id": "1589404477324660736",
+        "author_id": "3001970162",
+        "conversation_id": "1589404477324660736",
+        "text": "4 ✅\nsó faltou o bônus! https://t.co/WBiPybBCYx",
+        "geo": "85f604f26afe552f",
+        "created_at": "2022-11-06T23:48:51.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.9224747712771,
+            "like_count": 4.596311136780829,
+            "reply_count": 2.342422680822206,
+            "retweet_count": 2.720159303405957,
+            "url_link_clicks": 2.7489628612561616,
+            "user_profile_clicks": 2.655138434811382
+        },
         "domains": [
-            "Entities [Entity Service]",
-            "Brand"
-        ],
-        "geo.place_id": "dac23207c12311e2",
-        "country": "Indonesia"
-    },
-    {
-        "id": "1588717364840759297",
-        "author_id": "1575279405001318401",
-        "conversation_id": "1588717364840759297",
-        "text": "Britain loves a bargain, but you don't g\n\n https://t.co/7TFBFcee9w",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T02:18:31.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588717364828200960",
-        "author_id": "1575282509742755840",
-        "conversation_id": "1588717364828200960",
-        "text": "Britain loves a bargain, but you don't g\n\n https://t.co/sxZKC42CDZ",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T02:18:31.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588717364299833347",
-        "author_id": "1576096927036321792",
-        "conversation_id": "1588717364299833347",
-        "text": "Britain loves a bargain, but you don't g\n\n https://t.co/zf1Evrqd3R",
-        "geo": "01da545b582fc86b",
-        "created_at": "2022-11-05T02:18:31.000Z",
-        "domains": [],
-        "geo.place_id": "01da545b582fc86b",
-        "country": "Kingdom of Saudi Arabia"
-    },
-    {
-        "id": "1588735462617010176",
-        "author_id": "61675719",
-        "conversation_id": "1588735462617010176",
-        "text": "Agradezco a quien tenga disponible y me pueda vender mil gracias de antemano...\n#USDT  #Tether #Bitcoin https://t.co/8WsSPHSmkr",
-        "geo": "01670a614d3244d4",
-        "created_at": "2022-11-05T03:30:26.000Z",
-        "domains": [
+            "Local News",
+            "American Football Game",
+            "Unified Twitter Taxonomy",
+            "Sports Event",
+            "Events [Entity Service]",
+            "Sport",
+            "NFL Football Game",
+            "Sports Team",
+            "Basketball Game",
+            "TV Shows",
             "Business Taxonomy",
-            "Interests and Hobbies Category",
-            "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Digital Assets & Crypto"
+            "Sports League"
         ],
-        "geo.place_id": "01670a614d3244d4",
-        "country": "Colombia"
+        "geo.place_id": "85f604f26afe552f",
+        "country": "Brazil",
+        "conversation_data": {
+            "author_id": "3001970162",
+            "text": "4 ✅\nsó faltou o bônus! https://t.co/WBiPybBCYx",
+            "created_at": "2022-11-06T23:48:51.000Z"
+        }
     },
     {
-        "id": "1588734899598798848",
-        "author_id": "771619",
-        "conversation_id": "1588580812592939008",
-        "text": "@smydrad It’s a grift but I had to go in. Bought 2 tix tonight for $4. Feeling like Bitcoin 2020. Hope to split the winnings with you and save my half to launch a cat rescue op with @iAmLacimus",
-        "geo": "5a110d312052166f",
-        "created_at": "2022-11-05T03:28:11.000Z",
-        "domains": [
-            "Business Taxonomy",
-            "Interests and Hobbies Category",
-            "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Digital Assets & Crypto"
-        ],
-        "geo.place_id": "5a110d312052166f",
-        "country": "United States"
-    },
-    {
-        "id": "1588734494349352961",
-        "author_id": "1182962602768584714",
-        "conversation_id": "1588734494349352961",
-        "text": "@Newmaria1_ \nSooo.... how long until #bitcoin    hit $2 million dollars?",
-        "geo": "04cb31bae3b3af93",
-        "created_at": "2022-11-05T03:26:35.000Z",
-        "domains": [
-            "Business Taxonomy",
-            "Interests and Hobbies Category",
-            "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Digital Assets & Crypto"
-        ],
-        "geo.place_id": "04cb31bae3b3af93",
-        "country": "United States"
-    },
-    {
-        "id": "1588734325121748992",
-        "author_id": "1084997689140379649",
-        "conversation_id": "1588734325121748992",
-        "text": "Join #PiNetwork. Did you miss out on Bitcoin &amp; Ethereum mining? Pi Network is a great opportunity for you. Mine Pi coin with your smart Phone 📲by clicking on the App every 24hrs. #DOT #ETH  #BNB        #BTC         #Picoin #Web3\nJoin link https://t.co/Uic8yNVOTo https://t.co/vWjWGTvGqz",
-        "geo": "fd09cb221dcc3002",
-        "created_at": "2022-11-05T03:25:55.000Z",
-        "domains": [
-            "Business Taxonomy",
-            "Interests and Hobbies Category",
-            "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Digital Assets & Crypto"
-        ],
-        "geo.place_id": "fd09cb221dcc3002",
-        "country": "Malaysia"
-    },
-    {
-        "id": "1588733976738664455",
-        "author_id": "1182962602768584714",
-        "conversation_id": "1588733976738664455",
-        "text": "@8Ccgt \n#BITCOIN    BOUNCING! 🚀",
-        "geo": "04cb31bae3b3af93",
-        "created_at": "2022-11-05T03:24:31.000Z",
-        "domains": [
-            "Business Taxonomy",
-            "Interests and Hobbies Category",
-            "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Digital Assets & Crypto"
-        ],
-        "geo.place_id": "04cb31bae3b3af93",
-        "country": "United States"
-    },
-    {
-        "id": "1588736474186682370",
-        "author_id": "1585781720510795776",
-        "conversation_id": "1588736474186682370",
-        "text": "مساج كويتي سالميه كامل الخدمه ♥ 😌 click https://t.co/Pv7y1bElje 💕 😀 #massage_kuwait_salmiy https://t.co/nDkprsyMbd",
-        "geo": "0a74ef90d0d6f000",
-        "created_at": "2022-11-05T03:34:27.000Z",
+        "id": "1589403795804782592",
+        "author_id": "70591194",
+        "conversation_id": "1589392310638608384",
+        "text": "@shamsul__kamal @haikal952 Sbbkn pelaburan, ada keputusan TH mngkin x tepat. Jadi ada yg x jana keuntungan. Tambah lagi, bila umumkan bonus melebihi kadar apa yg TH boleh berikan. Mungkin TH patut kembali pada tujuan asal penubuhan dan wujudkan akaun berbeza utk pelaburan bagi pendeposit yg mahu.",
+        "geo": "7257885c03987f56",
+        "created_at": "2022-11-06T23:46:09.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.670538068337066,
+            "like_count": 4.59240994757086,
+            "reply_count": 2.949877704036875,
+            "retweet_count": 2.3891660843645326,
+            "url_link_clicks": 2.9159272116971158,
+            "user_profile_clicks": 2.6599162000698504
+        },
         "domains": [],
-        "geo.place_id": "0a74ef90d0d6f000",
-        "country": "Kuwait"
+        "geo.place_id": "7257885c03987f56",
+        "country": "Malaysia",
+        "conversation_data": {
+            "author_id": "2686420063",
+            "text": "Ada berita palsu mengenai Laporan Tahunan Tabung Haji 2020 yg menyatakan bahawa PH menjual aset TH sebanyak RM86b\n\nKesimpulan ni dibuat atas hanya SATU baris dlm Penyata Imbangan\n\nIni ialah satu dakwaan mengarut yg salah dari berbagai sudut/aspek\n\nKalau nak tahu, sila ikut thread https://t.co/CPUMcn8ebb",
+            "created_at": "2022-11-06T23:00:30.000Z"
+        }
     },
     {
-        "id": "1588735999647297536",
-        "author_id": "4531661009",
-        "conversation_id": "1588735999647297536",
-        "text": "Click the link below to get my OnlyFans for half price😘😘 https://t.co/xXnoy25sV1",
-        "geo": "3b77caf94bfc81fe",
-        "created_at": "2022-11-05T03:32:34.000Z",
+        "id": "1589403127090147329",
+        "author_id": "1013186441717772288",
+        "conversation_id": "1589403127090147329",
+        "text": "This year I got the biggest raise ever over $19,000 and my wife got a $10,000 with a $12,000 bonus all without a college degree .Thnks Joe",
+        "geo": "f9c0877820b7848a",
+        "created_at": "2022-11-06T23:43:29.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.823226362800612,
+            "like_count": 4.355604750958804,
+            "reply_count": 2.3096301674258988,
+            "retweet_count": 2.012837224705172,
+            "url_link_clicks": 3.0382226383687185,
+            "user_profile_clicks": 2.8715729355458786
+        },
         "domains": [],
-        "geo.place_id": "3b77caf94bfc81fe",
-        "country": "United States"
+        "geo.place_id": "f9c0877820b7848a",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "1013186441717772288",
+            "text": "This year I got the biggest raise ever over $19,000 and my wife got a $10,000 with a $12,000 bonus all without a college degree .Thnks Joe",
+            "created_at": "2022-11-06T23:43:29.000Z"
+        }
     },
     {
-        "id": "1588735920186228736",
-        "author_id": "1585781720510795776",
-        "conversation_id": "1588735920186228736",
-        "text": "مساج كويتي سالميه كامل الخدمه ♥ 😌 click https://t.co/Pv7y1bElje 💕 😀 #massage_kuwait_salmiy https://t.co/MLZkB4ADZd",
-        "geo": "07d9e95762083002",
-        "created_at": "2022-11-05T03:32:15.000Z",
-        "domains": [],
-        "geo.place_id": "07d9e95762083002",
-        "country": "Kuwait"
-    },
-    {
-        "id": "1588735907494244357",
-        "author_id": "1445344287844016128",
-        "conversation_id": "1588735907494244357",
-        "text": "15 Years memories in a click \n@ashwinjadhavs\n#Google https://t.co/bRINAu9Cfz",
-        "geo": "1b8680cd52a711cb",
-        "created_at": "2022-11-05T03:32:12.000Z",
+        "id": "1589406354279890945",
+        "author_id": "1312041668938473472",
+        "conversation_id": "1589406354279890945",
+        "text": "Was Ticket to Ride your first introduction to modern board games? 🙋‍♀️ Easy to learn and so fun. The perfect \"gateway game\" to introduce friends &amp; family to the hobby. Play for FREE from our library or bring home a copy for 47.99 - 20% off full retail! https://t.co/JgeFT3yJ9U",
+        "geo": "008cf65153950e89",
+        "created_at": "2022-11-06T23:56:19.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.350962852321358,
+            "like_count": 4.905148001856016,
+            "reply_count": 2.948412965778601,
+            "retweet_count": 3.0187004986662433,
+            "url_link_clicks": 2.814913181275074,
+            "user_profile_clicks": 2.909020854211156
+        },
         "domains": [
+            "Product Taxonomy",
             "Unified Twitter Taxonomy",
-            "Entities [Entity Service]",
-            "Brand",
-            "Product"
-        ],
-        "geo.place_id": "1b8680cd52a711cb",
-        "country": "India"
-    },
-    {
-        "id": "1588735819376111618",
-        "author_id": "1588732171921068032",
-        "conversation_id": "1588735819376111618",
-        "text": "Who wouldn't want the ability to control their car windows tint with a click of a button 😳😳😳😳  try smart tint for cars #smarttintforcars #smartint #smarttint #automatictint https://t.co/h1p2XixPIJ",
-        "geo": "23184b2af9649efa",
-        "created_at": "2022-11-05T03:31:51.000Z",
-        "domains": [
-            "Unified Twitter Taxonomy",
+            "Interests and Hobbies",
             "Business Taxonomy"
         ],
-        "geo.place_id": "23184b2af9649efa",
-        "country": "Guyana"
+        "geo.place_id": "008cf65153950e89",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "1312041668938473472",
+            "text": "Was Ticket to Ride your first introduction to modern board games? 🙋‍♀️ Easy to learn and so fun. The perfect \"gateway game\" to introduce friends &amp; family to the hobby. Play for FREE from our library or bring home a copy for 47.99 - 20% off full retail! https://t.co/JgeFT3yJ9U",
+            "created_at": "2022-11-06T23:56:19.000Z"
+        }
     },
     {
-        "id": "1588607481940480000",
-        "author_id": "384498135",
-        "conversation_id": "1588607481940480000",
-        "text": "“It is the unknown we fear when we look upon death and darkness,\nnothing more.” - ALBUS DUMBLEDORE low stock alert!!!🚨 @ K/D Empire https://t.co/ium1Uz74Dm",
-        "geo": "140800566259f12f",
-        "created_at": "2022-11-04T19:01:53.000Z",
-        "domains": [
-            "Unified Twitter Taxonomy",
-            "Multimedia Franchise",
-            "Business Taxonomy"
-        ],
-        "geo.place_id": "140800566259f12f",
-        "country": "United States"
-    },
-    {
-        "id": "1588378691544829952",
-        "author_id": "129374378",
-        "conversation_id": "1588378691544829952",
-        "text": "@flipkartsupport \nBe alert friends now they cancelled essential items also without any proper reason after 4 days and all offers and products are also out of stock or increased price . Very bad team @Flipkart \n@GyanTherapy https://t.co/rpK2UGzvtp",
-        "geo": "142d44a237f3db2f",
-        "created_at": "2022-11-04T03:52:45.000Z",
-        "domains": [
-            "Business Taxonomy",
-            "Brand"
-        ],
-        "geo.place_id": "142d44a237f3db2f",
-        "country": "India"
-    },
-    {
-        "id": "1588291334992896001",
-        "author_id": "384498135",
-        "conversation_id": "1588291334992896001",
-        "text": "\"I Won’t Help People Who Insult My Friends!\" Low stock alert!🚨 @ K/D Empire https://t.co/IN1pOCXtT5",
-        "geo": "140800566259f12f",
-        "created_at": "2022-11-03T22:05:37.000Z",
+        "id": "1589406301658185728",
+        "author_id": "1354459566742925318",
+        "conversation_id": "1589252030815952898",
+        "text": "@TheSmartRyan @Doc_Wolverine I fear the intrusion of idiocy or malcontents. I mean, the ultimate spam trap. Consider it, 24/7 phonk walk video in the mind. Screaming, ranting political loonies invading spaces on the “free speech” context.",
+        "geo": "6be71d3134ce7613",
+        "created_at": "2022-11-06T23:56:06.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.171357804947009,
+            "like_count": 3.725176301419137,
+            "reply_count": 2.745855195173729,
+            "retweet_count": 2.5634810853944106,
+            "url_link_clicks": 2.957607287060095,
+            "user_profile_clicks": 2.9740509027928774
+        },
         "domains": [],
-        "geo.place_id": "140800566259f12f",
-        "country": "United States"
+        "geo.place_id": "6be71d3134ce7613",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "898321581444911108",
+            "text": "I mean, with the whole fire risk thing, and likely brain damage from installation...\n\nIf you take the title in a more ironic tone, I think it fits... https://t.co/PDNmnqF2Iw",
+            "created_at": "2022-11-06T13:43:05.000Z"
+        }
     },
     {
-        "id": "1588215013700997120",
-        "author_id": "1588167021958774790",
-        "conversation_id": "1588215013700997120",
-        "text": "Chucks Taylor Converse Casablanca\nStock Alert!!!!!!\nDm to Order a Pair\nCall/WhatsApp 0501125200 for a pair\nSize:40-44\nPrice:370Ghc\n\n#shoesonline\n#shoesforsale\n#shoeslovers\n#shoesfashion\n#shoesaddict \n#shoestyle\n#converseshoes\n#shoes https://t.co/r3axeGk2HV",
-        "geo": "07d9cc7d0f883000",
-        "created_at": "2022-11-03T17:02:21.000Z",
+        "id": "1589406289066885120",
+        "author_id": "1463018106033520641",
+        "conversation_id": "1589406289066885120",
+        "text": "@IMFNews MESSAGE E). HUMAN BEINGS IN THE WHOLE EARTH DO NOT REQUIRE ANY CURRENCY, COINS, CASH AND ANY OTHER MEDIUM OF EXCHANGE (EXAMPLE: GOLD, SILVER, BRONZE ETC.). ALL AND EVERYTHING REQUIRED FOR 'THE HEALTHY-LIFE' IN 'THE CHRISTIAN SOCIALISM' CAN BE GIVEN COMPLETELY FREE TO ALL https://t.co/d1QB6QTb4t",
+        "geo": "07d9e0fb54c80000",
+        "created_at": "2022-11-06T23:56:03.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 4.295501126169623,
+            "like_count": 4.5213342567775685,
+            "reply_count": 2.6324572921847245,
+            "retweet_count": 2.0755469613925306,
+            "url_link_clicks": 2.996949248495381,
+            "user_profile_clicks": 2.8382192219076257
+        },
         "domains": [
-            "Unified Twitter Taxonomy",
+            "Political Body",
+            "Unified Twitter Taxonomy"
+        ],
+        "geo.place_id": "07d9e0fb54c80000",
+        "country": "India",
+        "conversation_data": {
+            "author_id": "1463018106033520641",
+            "text": "@IMFNews MESSAGE E). HUMAN BEINGS IN THE WHOLE EARTH DO NOT REQUIRE ANY CURRENCY, COINS, CASH AND ANY OTHER MEDIUM OF EXCHANGE (EXAMPLE: GOLD, SILVER, BRONZE ETC.). ALL AND EVERYTHING REQUIRED FOR 'THE HEALTHY-LIFE' IN 'THE CHRISTIAN SOCIALISM' CAN BE GIVEN COMPLETELY FREE TO ALL https://t.co/d1QB6QTb4t",
+            "created_at": "2022-11-06T23:56:03.000Z"
+        }
+    },
+    {
+        "id": "1589405752166187008",
+        "author_id": "805797843579506688",
+        "conversation_id": "1589405752166187008",
+        "text": "How's that bitcoin going for ya? WTF is Woke. https://t.co/r3SvVC1irT",
+        "geo": "0073b76548e5984f",
+        "created_at": "2022-11-06T23:53:55.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.903791890804623,
+            "like_count": 4.730192591176918,
+            "reply_count": 2.6972293427597176,
+            "retweet_count": 2.8898617212581885,
+            "url_link_clicks": 2.9489017609702137,
+            "user_profile_clicks": 3.0187004986662433
+        },
+        "domains": [
+            "Digital Assets & Crypto",
+            "Entities [Entity Service]",
             "Business Taxonomy",
-            "Brand",
+            "Unified Twitter Taxonomy",
             "Interests and Hobbies Category"
         ],
-        "geo.place_id": "07d9cc7d0f883000",
-        "country": "Ghana"
+        "geo.place_id": "0073b76548e5984f",
+        "country": "Australia",
+        "conversation_data": {
+            "author_id": "805797843579506688",
+            "text": "How's that bitcoin going for ya? WTF is Woke. https://t.co/r3SvVC1irT",
+            "created_at": "2022-11-06T23:53:55.000Z"
+        }
     },
     {
-        "id": "1588202336442368006",
-        "author_id": "1259178474973073409",
-        "conversation_id": "1588202336442368006",
-        "text": "New Stock alert🎆🛒🛍️💫\n\n✅ Forearm Fulcrum\n\n✅ Swimming Goggles\n\n✅ Swimming caps\n\n✅ Running caps\n\n✅ Kicking fins\n\n✅ Swimming Custumes\n\n✅ Ladies Gym tights\n\n..🔥🔥🔥 hot New Stock 🤩🤩\n\nhttps://t.co/AS1NJFDizc\n\n#badeqshop🇰🇪 #newstock #newstockalert https://t.co/faqHc1lsaa",
-        "geo": "015cd4c51a4052d1",
-        "created_at": "2022-11-03T16:11:59.000Z",
+        "id": "1589404739719962624",
+        "author_id": "1553854057441370114",
+        "conversation_id": "1580379921062694912",
+        "text": "@Latasha41351254 @one3seven137 @0xdexion @CryptoJournaal @M1Lv7 @lrodmakeup @lenin13121471 @RachelIrmak @PopeRaoul @munjimoongchi The finding is the most stringent test yet of the equivalence principle, a key tenet of Einstein’s theory of general relativity. @MrBeast #bitcoinluis @cryptocom #Bitcoin #lrodcreations #555pool https://t.co/3HOyU483p7",
+        "geo": "0fc3d01911d5b000",
+        "created_at": "2022-11-06T23:49:54.000Z",
+        "public_metrics": {
+            "retweet_count": 1,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.9072006123254,
+            "like_count": 3.8542452970661185,
+            "reply_count": 2.5921767573958667,
+            "retweet_count": 2.957607287060095,
+            "url_link_clicks": 2.3710678622717363,
+            "user_profile_clicks": 2.9111576087399764
+        },
         "domains": [
-            "Exercise & fitness"
+            "Person",
+            "Digital Assets & Crypto",
+            "Brand",
+            "Entities [Entity Service]",
+            "Business Taxonomy",
+            "Digital Creator",
+            "Unified Twitter Taxonomy",
+            "Interests and Hobbies Category"
         ],
-        "geo.place_id": "015cd4c51a4052d1",
-        "country": "Kenya"
-    }
+        "geo.place_id": "0fc3d01911d5b000",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "1576302508414185472",
+            "text": "🏆WhiteList Winners:\n\n@one3seven137,@0xdexion,@CryptoJournaal,@M1Lv7,@lrodmakeup,@lenin13121471,@RachelIrmak,@PopeRaoul,@munjimoongchi\n\nFor MINT Join Discord https://t.co/X5NYM9ULyI",
+            "created_at": "2022-10-13T02:08:29.000Z"
+        }
+    },
+    {
+        "id": "1589404429702533120",
+        "author_id": "197206011",
+        "conversation_id": "1589404429702533120",
+        "text": "@nayibbukele este homem vai ser o farol da liberdade para um mundo melhor livre da pobreza e livre da opressão \nA experiência com o bitcoin tem que dar certo.",
+        "geo": "ad8a3318a4317a03",
+        "created_at": "2022-11-06T23:48:40.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 1,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.502095126583678,
+            "like_count": 4.9425586374396016,
+            "reply_count": 2.278753600952829,
+            "retweet_count": 2.919601023784111,
+            "url_link_clicks": 2.03342375548695,
+            "user_profile_clicks": 2.4785664955938436
+        },
+        "domains": [
+            "Digital Assets & Crypto",
+            "Entities [Entity Service]",
+            "Business Taxonomy",
+            "Unified Twitter Taxonomy",
+            "Interests and Hobbies Category"
+        ],
+        "geo.place_id": "ad8a3318a4317a03",
+        "country": "Brazil",
+        "conversation_data": {
+            "author_id": "197206011",
+            "text": "@nayibbukele este homem vai ser o farol da liberdade para um mundo melhor livre da pobreza e livre da opressão \nA experiência com o bitcoin tem que dar certo.",
+            "created_at": "2022-11-06T23:48:40.000Z"
+        }
+    },
+    {
+        "id": "1589407146843996160",
+        "author_id": "348066118",
+        "conversation_id": "1589307490906574848",
+        "text": "@TalkinYanks Let them all go except green make 1 more offer at judge if not fuck it ….fire boone retooled",
+        "geo": "aef8b0db2753976d",
+        "created_at": "2022-11-06T23:59:28.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.201006356679015,
+            "like_count": 4.60770158958106,
+            "reply_count": 2.9552065375419416,
+            "retweet_count": 2.800717078282385,
+            "url_link_clicks": 3.012415374762433,
+            "user_profile_clicks": 2.869818207979328
+        },
+        "domains": [],
+        "geo.place_id": "aef8b0db2753976d",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "887792363052998656",
+            "text": "Things are happening https://t.co/HP6rNUmsbE",
+            "created_at": "2022-11-06T17:23:28.000Z"
+        }
+    },
+    {
+        "id": "1589406230275293184",
+        "author_id": "1366834132207210497",
+        "conversation_id": "1589406230275293184",
+        "text": "I love anything new that life has to offer me.\n\nIRYNA,28, \nID 11883943\n\nhttps://t.co/ylwZWLyM0q\n\n#life #dating https://t.co/ulmM49t9J1",
+        "geo": "808c22f5a7dc363b",
+        "created_at": "2022-11-06T23:55:49.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.54844224282037,
+            "like_count": 4.569549464888704,
+            "reply_count": 2.1072099696478683,
+            "retweet_count": 2.5646660642520893,
+            "url_link_clicks": 2.5575072019056577,
+            "user_profile_clicks": 2.597695185925512
+        },
+        "domains": [],
+        "geo.place_id": "808c22f5a7dc363b",
+        "country": "Germany",
+        "conversation_data": {
+            "author_id": "1366834132207210497",
+            "text": "I love anything new that life has to offer me.\n\nIRYNA,28, \nID 11883943\n\nhttps://t.co/ylwZWLyM0q\n\n#life #dating https://t.co/ulmM49t9J1",
+            "created_at": "2022-11-06T23:55:49.000Z"
+        }
+    },
+    {
+        "id": "1589405954985975808",
+        "author_id": "19011465",
+        "conversation_id": "1589405954985975808",
+        "text": "What do you think they offer politicians when they lobby??????? https://t.co/hAvyRQkGbC",
+        "geo": "3f5897b87d2bf56c",
+        "created_at": "2022-11-06T23:54:44.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.3550739585555505,
+            "like_count": 4.329316505090259,
+            "reply_count": 3.000434077479319,
+            "retweet_count": 2.9079485216122722,
+            "url_link_clicks": 2.6757783416740852,
+            "user_profile_clicks": 2.161368002234975
+        },
+        "domains": [
+            "Person",
+            "Business Taxonomy",
+            "Unified Twitter Taxonomy",
+            "Digital Creator"
+        ],
+        "geo.place_id": "3f5897b87d2bf56c",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "19011465",
+            "text": "What do you think they offer politicians when they lobby??????? https://t.co/hAvyRQkGbC",
+            "created_at": "2022-11-06T23:54:44.000Z"
+        }
+    },
+    {
+        "id": "1589408360729907201",
+        "author_id": "1578758641595060224",
+        "conversation_id": "1589408360729907201",
+        "text": "Meat is a big deal in my life. I do love\n\n https://t.co/bHZo9subme",
+        "geo": "01da545b582fc86b",
+        "created_at": "2022-11-07T00:04:17.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.751454634360575,
+            "like_count": 4.982076661723761,
+            "reply_count": 3.0017337128090005,
+            "retweet_count": 2.247973266361807,
+            "url_link_clicks": 2.7701152947871015,
+            "user_profile_clicks": 3.024074987307426
+        },
+        "domains": [],
+        "geo.place_id": "01da545b582fc86b",
+        "country": "Kingdom of Saudi Arabia",
+        "conversation_data": {
+            "author_id": "1578758641595060224",
+            "text": "Meat is a big deal in my life. I do love\n\n https://t.co/bHZo9subme",
+            "created_at": "2022-11-07T00:04:17.000Z"
+        }
+    },
+    {
+        "id": "1589408341163651072",
+        "author_id": "259077662",
+        "conversation_id": "1589319430361976834",
+        "text": "@TigerCommenter I read some of the comments.. and I believe Cade left the pocket and went left and made an I’ll advised pass. This game moves quicker than HS.. Cade needs to see it for a year before he is ready to deal with it.",
+        "geo": "0ec50d630c5d2c2b",
+        "created_at": "2022-11-07T00:04:12.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.919120473263587,
+            "like_count": 4.678454641420398,
+            "reply_count": 2.403120521175818,
+            "retweet_count": 2.678518379040114,
+            "url_link_clicks": 2.4456042032735974,
+            "user_profile_clicks": 3.010723865391773
+        },
+        "domains": [
+            "Unified Twitter Taxonomy",
+            "Colleges & Universities"
+        ],
+        "geo.place_id": "0ec50d630c5d2c2b",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "42720695",
+            "text": "Hard to understand why the staff ran Cade out of the pocket to his left when backed up at the goal line &amp; then pulled him when it didn’t go well. Ran the same play against Cuse just 2 weeks ago that also didn’t go well. Truly fascinating.",
+            "created_at": "2022-11-06T18:10:54.000Z"
+        }
+    },
+    {
+        "id": "1589408172800106497",
+        "author_id": "1908768620",
+        "conversation_id": "1589119653993148423",
+        "text": "@BRWalkoff #LADodgers \n\nThank you dodgers for such a great deal,!",
+        "geo": "7543692056063d2f",
+        "created_at": "2022-11-07T00:03:32.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.786556939573433,
+            "like_count": 4.886795188581199,
+            "reply_count": 2.7993405494535817,
+            "retweet_count": 2.920123326290724,
+            "url_link_clicks": 2.8750612633917,
+            "user_profile_clicks": 2.8382192219076257
+        },
+        "domains": [
+            "Sport",
+            "Unified Twitter Taxonomy",
+            "TV Shows",
+            "Sports Team",
+            "Business Taxonomy",
+            "Sports League"
+        ],
+        "geo.place_id": "7543692056063d2f",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "38702668",
+            "text": "Never forget. https://t.co/crGGnsi87L",
+            "created_at": "2022-11-06T04:57:04.000Z"
+        }
+    },
+    {
+        "id": "1589408354526720001",
+        "author_id": "241491206",
+        "conversation_id": "1589408354526720001",
+        "text": "Saw #GeorgeOsborne on Andrew Neil’s #channel4 #andrewneilshow . He sits joshing with Ed Balls with his supercilious grin. Watching, you’d never think he pretty much ruined Britain single-handedly with his austerity programme (which led to Brexit). What a prize prick.",
+        "geo": "0df077af67484a2a",
+        "created_at": "2022-11-07T00:04:16.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.911833835365186,
+            "like_count": 4.886236842515313,
+            "reply_count": 2.5634810853944106,
+            "retweet_count": 2.367355921026019,
+            "url_link_clicks": 3.002166061756508,
+            "user_profile_clicks": 2.621176281775035
+        },
+        "domains": [
+            "Person",
+            "Unified Twitter Taxonomy",
+            "Journalist"
+        ],
+        "geo.place_id": "0df077af67484a2a",
+        "country": "United Kingdom",
+        "conversation_data": {
+            "author_id": "241491206",
+            "text": "Saw #GeorgeOsborne on Andrew Neil’s #channel4 #andrewneilshow . He sits joshing with Ed Balls with his supercilious grin. Watching, you’d never think he pretty much ruined Britain single-handedly with his austerity programme (which led to Brexit). What a prize prick.",
+            "created_at": "2022-11-07T00:04:16.000Z"
+        }
+    },
+    {
+        "id": "1589407657475321856",
+        "author_id": "1393028021473497094",
+        "conversation_id": "1589407657475321856",
+        "text": "🎉Just Cheered for my favorite team. Come and join me at 10K World Cup to cheer '⚽️footballer' up, and Win the Championship.⚽️🏆140  BAYC🐒 have joined, 280 ETH in the prize pool!👉 https://t.co/bAAh8ohdlj via @10KWorldCup",
+        "geo": "51ec1aa7df16aa68",
+        "created_at": "2022-11-07T00:01:29.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.805273796688095,
+            "like_count": 4.995977231283496,
+            "reply_count": 2.5428254269591797,
+            "retweet_count": 2.8457180179666586,
+            "url_link_clicks": 2.850033257689769,
+            "user_profile_clicks": 2.4683473304121573
+        },
+        "domains": [
+            "Unified Twitter Taxonomy",
+            "Business Taxonomy",
+            "Entities [Entity Service]"
+        ],
+        "geo.place_id": "51ec1aa7df16aa68",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "1393028021473497094",
+            "text": "🎉Just Cheered for my favorite team. Come and join me at 10K World Cup to cheer '⚽️footballer' up, and Win the Championship.⚽️🏆140  BAYC🐒 have joined, 280 ETH in the prize pool!👉 https://t.co/bAAh8ohdlj via @10KWorldCup",
+            "created_at": "2022-11-07T00:01:29.000Z"
+        }
+    },
+    {
+        "id": "1589406501403521024",
+        "author_id": "1283395308014247941",
+        "conversation_id": "1589406498148405248",
+        "text": "Three Packs Per Player In The Prize Pool And Half An OTS Pack In The Prize Pool Per Player!\n\nEntry:$10 \n\n#yugioh #yugiohtournament",
+        "geo": "13958d591e155009",
+        "created_at": "2022-11-06T23:56:54.000Z",
+        "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 0,
+            "like_count": 0,
+            "quote_count": 0
+        },
+        "organic_metrics": {
+            "impression_count": 5.931629215385397,
+            "like_count": 4.357744325180375,
+            "reply_count": 2.3541084391474008,
+            "retweet_count": 2.8524799936368566,
+            "url_link_clicks": 2.9867717342662448,
+            "user_profile_clicks": 2.73559889969818
+        },
+        "domains": [
+            "Multimedia Franchise",
+            "Business Taxonomy",
+            "Unified Twitter Taxonomy"
+        ],
+        "geo.place_id": "13958d591e155009",
+        "country": "United States",
+        "conversation_data": {
+            "author_id": "1283395308014247941",
+            "text": "Gotham City Yu-Gi-Oh! Tournament \n\n Monday  11/06/2022\n\nRegistration Starts at 6:30PM\n\nFirst Round starts at 7:00PM\n\nFormat: Constructed Advance\n\nEvery Player Will Receive One OTS 20 Tournament Pack https://t.co/M4By4I2IQn",
+            "created_at": "2022-11-06T23:56:53.000Z"
+        }
+    },
+        {
+            "id": "1589407805940781056",
+            "author_id": "1578757421853466625",
+            "conversation_id": "1589407805940781056",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/aDzxtSnLoJ",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:05.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.997450169445767,
+                "like_count": 4.881778253908564,
+                "reply_count": 2.6580113966571126,
+                "retweet_count": 2.8512583487190755,
+                "url_link_clicks": 2.513217600067939,
+                "user_profile_clicks": 2.905256048748451
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1578757421853466625",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/aDzxtSnLoJ",
+                "created_at": "2022-11-07T00:02:05.000Z"
+            }
+        },
+        {
+            "id": "1589407805449990144",
+            "author_id": "1580278795508285442",
+            "conversation_id": "1589407805449990144",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/VIAYNfaJKt",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:05.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.83508022852115,
+                "like_count": 4.684162875655057,
+                "reply_count": 3.0017337128090005,
+                "retweet_count": 2.9508514588885464,
+                "url_link_clicks": 3.0187004986662433,
+                "user_profile_clicks": 2.1492191126553797
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1580278795508285442",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/VIAYNfaJKt",
+                "created_at": "2022-11-07T00:02:05.000Z"
+            }
+        },
+        {
+            "id": "1589407805190000640",
+            "author_id": "1578879560858337280",
+            "conversation_id": "1589407805190000640",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/YD9hFEh0nM",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:05.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.941180865405555,
+                "like_count": 3.5650209283452936,
+                "reply_count": 3.010723865391773,
+                "retweet_count": 2.4756711883244296,
+                "url_link_clicks": 2.92272545799326,
+                "user_profile_clicks": 2.8444771757456815
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1578879560858337280",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/YD9hFEh0nM",
+                "created_at": "2022-11-07T00:02:05.000Z"
+            }
+        },
+        {
+            "id": "1589407803235524608",
+            "author_id": "1579018901748187143",
+            "conversation_id": "1589407803235524608",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/ZDIDsdH5WA",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:04.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.583264536822084,
+                "like_count": 4.963858630456638,
+                "reply_count": 2.937517892017347,
+                "retweet_count": 2.910624404889201,
+                "url_link_clicks": 2.909020854211156,
+                "user_profile_clicks": 2.681241237375587
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1579018901748187143",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/ZDIDsdH5WA",
+                "created_at": "2022-11-07T00:02:04.000Z"
+            }
+        },
+        {
+            "id": "1589407800546906112",
+            "author_id": "1578732396631015424",
+            "conversation_id": "1589407800546906112",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/digKAajy70",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:04.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.376806816824713,
+                "like_count": 4.162564406523019,
+                "reply_count": 2.307496037913213,
+                "retweet_count": 2.4955443375464483,
+                "url_link_clicks": 2.8830933585756897,
+                "user_profile_clicks": 2.0755469613925306
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1578732396631015424",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/digKAajy70",
+                "created_at": "2022-11-07T00:02:04.000Z"
+            }
+        },
+        {
+            "id": "1589407800190533636",
+            "author_id": "1578760943441526785",
+            "conversation_id": "1589407800190533636",
+            "text": "Love is always bestowed as a gift - free\n\n https://t.co/diGlc656oh",
+            "geo": "01da545b582fc86b",
+            "created_at": "2022-11-07T00:02:03.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.952668479548608,
+                "like_count": 4.2886739197645145,
+                "reply_count": 2.8068580295188172,
+                "retweet_count": 2.569373909615046,
+                "url_link_clicks": 3.024074987307426,
+                "user_profile_clicks": 2.829946695941636
+            },
+            "domains": [],
+            "geo.place_id": "01da545b582fc86b",
+            "country": "Kingdom of Saudi Arabia",
+            "conversation_data": {
+                "author_id": "1578760943441526785",
+                "text": "Love is always bestowed as a gift - free\n\n https://t.co/diGlc656oh",
+                "created_at": "2022-11-07T00:02:03.000Z"
+            }
+        },
+        {
+            "id": "1589408268379598849",
+            "author_id": "930929683025104896",
+            "conversation_id": "1589408268379598849",
+            "text": "We hire for passion and train for success here at Harbor Freight. Ready to start a long-lasting career with an industry leader? Apply now: Retail Stocking Supervisor https://t.co/nQMcPJRGK2 #StockingSupervisor #Lafayette, IN",
+            "geo": "df1b6e7143e9c8d4",
+            "created_at": "2022-11-07T00:03:55.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 4.451556183076428,
+                "like_count": 4.9202590221149505,
+                "reply_count": 2.798650645445269,
+                "retweet_count": 2.7902851640332416,
+                "url_link_clicks": 2.741939077729199,
+                "user_profile_clicks": 2.2576785748691846
+            },
+            "domains": [
+                "Unified Twitter Taxonomy"
+            ],
+            "geo.place_id": "df1b6e7143e9c8d4",
+            "country": "United States",
+            "conversation_data": {
+                "author_id": "930929683025104896",
+                "text": "We hire for passion and train for success here at Harbor Freight. Ready to start a long-lasting career with an industry leader? Apply now: Retail Stocking Supervisor https://t.co/nQMcPJRGK2 #StockingSupervisor #Lafayette, IN",
+                "created_at": "2022-11-07T00:03:55.000Z"
+            }
+        },
+        {
+            "id": "1589406960251641857",
+            "author_id": "170772185",
+            "conversation_id": "1589406960251641857",
+            "text": "We’re hiring warehouse employees in #SouthCharleston, WV! Apply now. https://t.co/G55u4S5lsL #Production",
+            "geo": "b8018050c8b66e62",
+            "created_at": "2022-11-06T23:58:43.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 5.844821865014404,
+                "like_count": 3.6588695922019623,
+                "reply_count": 2.8627275283179747,
+                "retweet_count": 2.9813655090785445,
+                "url_link_clicks": 3.0232524596337114,
+                "user_profile_clicks": 2.4771212547196626
+            },
+            "domains": [],
+            "geo.place_id": "b8018050c8b66e62",
+            "country": "United States",
+            "conversation_data": {
+                "author_id": "170772185",
+                "text": "We’re hiring warehouse employees in #SouthCharleston, WV! Apply now. https://t.co/G55u4S5lsL #Production",
+                "created_at": "2022-11-06T23:58:43.000Z"
+            }
+        },
+        {
+            "id": "1589406343143702528",
+            "author_id": "119210472",
+            "conversation_id": "1589406343143702528",
+            "text": "Build a career in your community with an industry-leading and growing company! Allied Universal is now hiring in #Greensboro, NC. Apply today! https://t.co/QKYiwvzklM #Safety",
+            "geo": "a6c257c61f294ec1",
+            "created_at": "2022-11-06T23:56:16.000Z",
+            "public_metrics": {
+                "retweet_count": 0,
+                "reply_count": 0,
+                "like_count": 0,
+                "quote_count": 0
+            },
+            "organic_metrics": {
+                "impression_count": 3.6982745766743674,
+                "like_count": 4.693225550582132,
+                "reply_count": 2.718501688867274,
+                "retweet_count": 2.24551266781415,
+                "url_link_clicks": 2.5171958979499744,
+                "user_profile_clicks": 2.9020028913507296
+            },
+            "domains": [
+                "Unified Twitter Taxonomy",
+                "Interests and Hobbies Vertical"
+            ],
+            "geo.place_id": "a6c257c61f294ec1",
+            "country": "United States",
+            "conversation_data": {
+                "author_id": "119210472",
+                "text": "Build a career in your community with an industry-leading and growing company! Allied Universal is now hiring in #Greensboro, NC. Apply today! https://t.co/QKYiwvzklM #Safety",
+                "created_at": "2022-11-06T23:56:16.000Z"
+            }
+        }
 ]

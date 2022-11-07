@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './modals/popup.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { MatGridListModule } from '@angular/material/grid-list'; 
 
 @NgModule({
   declarations: [
@@ -22,8 +23,8 @@ import { GoogleChartsModule } from 'angular-google-charts';
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
-    GoogleChartsModule
-
+    GoogleChartsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

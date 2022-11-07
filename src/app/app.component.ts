@@ -7,9 +7,9 @@ import { Tweet } from './models/tweet';
 //import jsonData from '../../src/assets/data/tweets.json';
 
 import tweetJson from '../../src/assets/apiData/tweets.json';
-
-import conversationJson from '../../src/assets/apiData/conversations.json';
+import noLocData from '../../src/assets/apiData/tweets_without_location.json'
 import metricJson from '../../src/assets/apiData/metrics.json';
+import { Metric } from './models/metrics';
 
 @Component({
   selector: 'app-root',
@@ -19,20 +19,22 @@ import metricJson from '../../src/assets/apiData/metrics.json';
 export class AppComponent implements OnInit {
 
   tweets : Tweet[] = [];
+  tweetsNoLoc: Tweet[] = [];
   domains: string[] = [];
   uniqueDomains: string[] = [];
   tweetsByLocation: Row[] = [];
+  metricData: Metric;
   currentDomain: string;
   currentLocation: string;
   currentTweet: Tweet;
 
   title = 'Spam Tweets Distribution';
   type = ChartType.TreeMap;
+  type2 = ChartType.Scatter;
   treeMapData : Row[] = []
   columnNames = ['Domain', 'Parent', 'Number of Tweets'];
   options = {};
-  width = 650;
-  height = 500;
+  
   showSecond: boolean = false;
   showThird: boolean = false;
   showFourth: boolean = false;
@@ -42,15 +44,32 @@ export class AppComponent implements OnInit {
   geoOptions = {   
     showTip: true,
   };
-  geoWidth = 600;
-  geoHeight = 500;
+
+  width = 750;
+  height = 550;
+
+  sWidth = 400;
+  sHeight = 500;
+  geoWidth = 900;
+  geoHeight = 550;
+  tWidth = 500;
+  tHeight = 500;
+
+  scatterData: Row[] = []
+  scatterCols = ['Impression', 'Spam Score']
+  scatterOptions = {
+    title: 'Impression Spam Score comparison',
+          hAxis: {title: 'Impression', minValue: 0},
+          vAxis: {title: 'Spam Score', minValue: 0, maxValue: 100},
+          legend: 'none'
+    }
 
   gaugeData = [
-    ['Fake Follower', 1.49],
-    ['Financial', 0.43],
-    ['Self Declared', 1.79],
-    ['Spammer', 4.16],
-    ['Overall', 1.31]
+    ['Fake Follower',0],
+    ['Financial', 0],
+    ['Self Declared', 0],
+    ['Spammer', 0],
+    ['Overall', 0]
   ];
 
   gaugeCols = ['Label', 'Value']
@@ -82,13 +101,20 @@ export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog){
       tweetJson.forEach(element => {
         this.tweets.push(new Tweet(
-          element.id, element.author_id, element.conversation_id, element.text, element.domains, element.country, new Date(element.created_at)))
+          element.id, element.author_id, element.conversation_id, 
+          element.text, element.domains, element.country, new Date(element.created_at), element.organic_metrics))
+      });
+      noLocData.forEach(element => {
+        this.tweetsNoLoc.push(new Tweet(
+          element.id, element.author_id, element.conversation_id, 
+          element.text, element.domains, element.country, new Date(element.created_at), element.organic_metrics))
       });
       this.tweets.forEach(t => {
         t.domains.forEach(d => {
           this.domains.push(d)
         });
       });
+      
       this.treeMapData.push(['Domain', null, 0]);
       this.uniqueDomains = [... new Set(this.domains)];
       [... new Set(this.domains)].forEach(dom => {
@@ -124,39 +150,80 @@ export class AppComponent implements OnInit {
           l, locations.filter((t) => t === l).length]);
       });
    }
+  
+  getNoLocData(): void{
+      this.showThird = true;
+      console.log(this.tweetsNoLoc)
+      const currentNoLocTweets = this.tweetsNoLoc.filter(t => t.domains.some(d => d === this.currentDomain))
+      this.type = ChartType.Table
+      this.generateNoLocTableData(currentNoLocTweets)
+  }
 
   onGeoSelect(params: any): void {
-    this.showThird = true;
-    this.type = ChartType.Table
-    this.generateTableData(params)
+      this.showThird = true;
+      this.type = ChartType.Table
+      this.generateTableData(params)
    }
 
-   generateTableData(param: any): void {
-    this.currentLocation = String(this.tweetsByLocation[param.selection[0].row][0]);
-    const filteredTweets = this.tweets.filter(t => t.location === this.currentLocation && t.domains
-                              .some(d => d === this.currentDomain))
-    
-    filteredTweets.forEach((t, index) => {
+   generateNoLocTableData(tweets: Tweet[]): void {
+      tweets.forEach((t, index) => {      
+        this.scatterData.push(this.organizeScatterData(t))
         this.tableData.push([
           index + 1, t.text]);
       });
    }
+
+   organizeScatterData(t: Tweet):[number, number]{
+      let overallSpamScore = 0
+      Object.entries(metricJson).forEach(b => {
+        if (b[0] === t.usedId){
+          overallSpamScore = b[1].overall
+        }
+      });
+      return [t.organicMetrics.impression_count, overallSpamScore]
+   }
+
+   generateTableData(param: any): void {
+      this.currentLocation = String(this.tweetsByLocation[param.selection[0].row][0]);
+      const filteredTweets = this.tweets.filter(t => t.location === this.currentLocation && t.domains
+                                .some(d => d === this.currentDomain))
+      
+      filteredTweets.forEach((t, index) => {
+          this.tableData.push([
+            index + 1, t.text]);
+          this.scatterData.push(this.organizeScatterData(t))
+        });
+      
+   }
+
+   onScatterPointSelect(params: any): void{
+      console.log(params)
+   }
   
    onTableSelect(params: any): void {
-    this.showFourth = true;
-    this.type = ChartType.Gauge
-    this.generateGaugeData(params)
+      this.showFourth = true;
+      this.type = ChartType.Gauge
+      this.generateGaugeData(params)
    }
 
    generateGaugeData(param: any): void {
-    const tweet = this.tableData[param.selection[0].row][1];
-    this.currentTweet = this.tweets.filter(t =>  t.location === this.currentLocation && t.domains
-              .some(d => d === this.currentDomain) && t.text === tweet)[0]
-    console.log(this.currentTweet, metricJson)
-    // metricJson[this.currentTweet.id]
+      const tweet = this.tableData[param.selection[0].row][1];
+      this.currentTweet = this.tweets.filter(t =>  t.location === this.currentLocation && t.domains
+                .some(d => d === this.currentDomain) && t.text === tweet)[0]
+      Object.entries(metricJson).forEach(b => {
+        if (b[0] === this.currentTweet.usedId){
+          this.metricData = new Metric(b[1].fake_follower, b[1].financial, b[1].overall, b[1].self_declared, b[1].spammer)
+        }
+      });
+      this.gaugeData = [
+        ['Fake Follower', this.metricData.fake_follower],
+        ['Financial', this.metricData.financial],
+        ['Self Declared', this.metricData.self_declared],
+        ['Spammer', this.metricData.spammer],
+        ['Overall', this.metricData.overall]
+      ]
    }
   
-
   goBackToThird(): void{
     this.showFourth = false;
     this.type = ChartType.Table
