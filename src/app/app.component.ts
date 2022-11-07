@@ -87,8 +87,8 @@ export class AppComponent implements OnInit {
     minorTicks: 5, 
   };
 
-  tableData : Row[] = []
-  tableCols = ['S.NO', 'Tweet']
+  tableData : any = []
+  tableCols = ['S.No', 'Tweet', 'Bot?']
   tableOptions = {};
 
   dataSource = [
@@ -178,14 +178,15 @@ export class AppComponent implements OnInit {
    generateNoLocTableData(tweets: Tweet[]): void {
       this.scatterData = []
       this.tableData = []
-      tweets.forEach((t, index) => {      
-        this.scatterData.push(this.organizeScatterData(t))
+      tweets.forEach((t, index) => { 
+        const scoreList = this.getMetricData(t)     
+        this.scatterData.push(scoreList)
         this.tableData.push([
-          index + 1, t.text]);
+          index + 1, t.text, scoreList[1] >60]);
       });
    }
 
-   organizeScatterData(t: Tweet):[number, number]{
+   getMetricData(t: Tweet):[number, number]{
       let overallSpamScore = 0
       Object.entries(metricJson).forEach(b => {
         if (b[0] === t.usedId){
@@ -203,9 +204,10 @@ export class AppComponent implements OnInit {
                                 .some(d => d === this.currentDomain))
       
       filteredTweets.forEach((t, index) => {
+        const scoreList = this.getMetricData(t)
           this.tableData.push([
-            index + 1, t.text]);
-          this.scatterData.push(this.organizeScatterData(t))
+            index + 1, t.text, scoreList[1] > 60]);
+          this.scatterData.push(scoreList)
         });
       
    }
