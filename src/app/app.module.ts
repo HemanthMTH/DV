@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PopupComponent } from './modals/popup.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { MatGridListModule } from '@angular/material/grid-list'; 
+import { MatTableModule } from '@angular/material/table'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ReactiveFormsModule,
     HttpClientModule,
     GoogleChartsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

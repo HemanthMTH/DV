@@ -28,12 +28,14 @@ export class AppComponent implements OnInit {
   currentLocation: string;
   currentTweet: Tweet;
 
-  title = 'Spam Tweets Distribution';
+  title = 'Tweets Distribution based on Domains';
   type = ChartType.TreeMap;
   type2 = ChartType.Scatter;
   treeMapData : Row[] = []
   columnNames = ['Domain', 'Parent', 'Number of Tweets'];
-  options = {};
+  options = {
+    showTip: true
+  };
   
   showSecond: boolean = false;
   showThird: boolean = false;
@@ -51,7 +53,7 @@ export class AppComponent implements OnInit {
   sWidth = 400;
   sHeight = 500;
   geoWidth = 900;
-  geoHeight = 550;
+  geoHeight = 480;
   tWidth = 500;
   tHeight = 500;
 
@@ -88,6 +90,15 @@ export class AppComponent implements OnInit {
   tableData : Row[] = []
   tableCols = ['S.NO', 'Tweet']
   tableOptions = {};
+
+  dataSource = [
+    {name: 'Fake follower', description: 'Bots purchased to increase follower counts'},
+    {name: 'Financial', description: 'Bots that post using cashtags'},
+    {name: 'Self declared', description: 'Bots from botwiki.org'},
+    {name: 'Spammer', description: 'Accounts labeled as spambots from several datasets'},
+    {name: 'Overall', description: 'Average of all'}
+  ];
+  displayedColumns: string[] = ['name', 'description'];
 
 
   private barData = [

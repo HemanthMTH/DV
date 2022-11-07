@@ -1,8 +1,8 @@
 <div class="toolbar" role="banner">
   <img
     width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    alt="Twitter Logo"
+    src="assets/logo.png"
   />
   <h3> Twitter Spam Data Analysis </h3>
 </div>
@@ -27,7 +27,7 @@
   </div>
 
   <div style="margin-top: 100px;" *ngIf="showSecond && !showThird && !showFourth">
-    <button style="left: 50%;  margin-top: 20px;" (click)="getNoLocData()" mat-raised-button color="primary"> No Location</button>
+       <div style="margin-left: 300px"><h1>Tweet distribution by countries for {{ currentDomain }}(Category)</h1></div>
           <google-chart style="margin-left: 150px" #geo
           [title]="geoTitle"
           [type]="type"
@@ -38,13 +38,13 @@
           [height]="geoHeight"
           (select)="onGeoSelect($event)">
         </google-chart>
+      <button style="left: 30%;  margin-top: 20px; margin-right: 20px;" (click)="getNoLocData()" mat-raised-button color="primary">Checkout Tweets with No Location</button>
       <button style="left: 50%" (click)="goBackToFirst()" mat-raised-button color="primary"> Go Back</button>
   </div>
 
   <div  style="margin-top: 100px;" *ngIf="showThird && !showFourth">
     
-  <mat-grid-list cols="2" rowHeight="1:1">
-      
+  <mat-grid-list cols="2" rowHeight="1:1">  
     <mat-grid-tile style="margin: 150px;">
         <div>
           <google-chart #chart3
@@ -74,12 +74,11 @@
         </div>
     </mat-grid-tile>
   </mat-grid-list>
-    
-    <button style="margin-left: 500px; margin-top: 5px;" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Second</button>
+    <button style="margin-left: 600px; margin-top: 5px;" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Second</button>
 </div>
-
-    <div  style="margin-top: 100px; margin-left: 100px;" *ngIf="showFourth">
+    <div  style="margin-top: 70px; margin-left: 100px;" *ngIf="showFourth">
       <div>
+        <div style="margin-left: 400px; margin-bottom: 40px;"><h1>Bot Rating for the User</h1></div>
           <google-chart #chart4
           [title]="title"
           [type]="type"
@@ -88,7 +87,21 @@
           [options]="gaugeOptions">
         </google-chart>
       </div>
-      <button style="margin-top: 200px; margin-left: 500px;" (click)="goBackToThird()" mat-raised-button color="primary"> Go Back to Third</button>
+      <div style="margin-top: 45px; margin-left: 300px">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Type </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef> Description </th>
+          <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+      <button style="margin-top: 20px; margin-left: 450px;" (click)="goBackToThird()" mat-raised-button color="primary"> Go Back to Third</button>
   </div>
 </div>
 
