@@ -164,7 +164,6 @@ export class AppComponent implements OnInit {
   
   getNoLocData(): void{
       this.showThird = true;
-      console.log(this.tweetsNoLoc)
       const currentNoLocTweets = this.tweetsNoLoc.filter(t => t.domains.some(d => d === this.currentDomain))
       this.type = ChartType.Table
       this.generateNoLocTableData(currentNoLocTweets)
@@ -177,6 +176,8 @@ export class AppComponent implements OnInit {
    }
 
    generateNoLocTableData(tweets: Tweet[]): void {
+      this.scatterData = []
+      this.tableData = []
       tweets.forEach((t, index) => {      
         this.scatterData.push(this.organizeScatterData(t))
         this.tableData.push([
@@ -195,6 +196,8 @@ export class AppComponent implements OnInit {
    }
 
    generateTableData(param: any): void {
+      this.scatterData = []
+      this.tableData = []
       this.currentLocation = String(this.tweetsByLocation[param.selection[0].row][0]);
       const filteredTweets = this.tweets.filter(t => t.location === this.currentLocation && t.domains
                                 .some(d => d === this.currentDomain))
