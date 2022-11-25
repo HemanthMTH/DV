@@ -67,11 +67,11 @@ export class AppComponent implements OnInit {
     }
 
   gaugeData = [
-    ['Fake Follower',0],
-    ['Financial', 0],
-    ['Self Declared', 0],
-    ['Spammer', 0],
-    ['Overall', 0]
+    ['Fake Follower',60.5],
+    ['Financial', 30.5],
+    ['Self Declared', 40.5],
+    ['Spammer', 50.5],
+    ['Overall', 45.5]
   ];
 
   gaugeCols = ['Label', 'Value']

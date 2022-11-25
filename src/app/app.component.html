@@ -21,9 +21,7 @@
           (select)="onSelect($event)">
         </google-chart>
       </div>
-      <div>
-        <button class="mt-2" (click)="OpenPopup()" mat-raised-button color="primary">Open D3</button>
-      </div>
+      
   </div>
 
   <div style="margin-top: 100px;" *ngIf="showSecond && !showThird && !showFourth">
@@ -39,11 +37,12 @@
           (select)="onGeoSelect($event)">
         </google-chart>
       <button style="left: 30%;  margin-top: 20px; margin-right: 20px;" (click)="getNoLocData()" mat-raised-button color="primary">Checkout Tweets with No Location</button>
-      <button style="left: 50%" (click)="goBackToFirst()" mat-raised-button color="primary"> Go Back</button>
+      <button style="left: 50%" (click)="goBackToFirst()" mat-raised-button color="primary"> Go Back to Tree Chart</button>
   </div>
 
   <div  style="margin-top: 100px;" *ngIf="showThird && !showFourth">
     
+  <div style="margin-left: 550px"><h1>Bot Detection on Tweets</h1></div>
   <mat-grid-list cols="2" rowHeight="1:1">  
     <mat-grid-tile style="margin: 150px;">
         <div>
@@ -74,7 +73,7 @@
         </div>
     </mat-grid-tile>
   </mat-grid-list>
-    <button style="margin-left: 600px; margin-top: 5px;" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Second</button>
+    <button style="margin-left: 600px; margin-top: 2px; margin-bottom: 25px;" (click)="goBackToSecond()" mat-raised-button color="primary"> Go Back to Geo Chart</button>
 </div>
     <div  style="margin-top: 70px; margin-left: 100px;" *ngIf="showFourth">
       <div>
@@ -101,7 +100,7 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
     </div>
-      <button style="margin-top: 20px; margin-left: 450px;" (click)="goBackToThird()" mat-raised-button color="primary"> Go Back to Third</button>
+      <button style="margin-top: 20px; margin-left: 450px;" (click)="goBackToThird()" mat-raised-button color="primary"> Go Back to Table and Scatter</button>
   </div>
 </div>
 
