@@ -241,7 +241,7 @@ export class AppComponent {
     this.showThird = false;
     this.type = ChartType.GeoChart
   }
-
+  //this can be used for creating D3 visualizations (Future work)
   OpenPopup() {
     const popup = this.dialog.open(PopupComponent,{width:'100%',height:'100%',
         enterAnimationDuration:'1000ms',
