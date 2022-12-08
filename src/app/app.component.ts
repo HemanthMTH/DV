@@ -3,9 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from './modals/popup.component';
 
 import { ChartType, Row } from "angular-google-charts";
-import { Tweet } from './models/tweet';
-//import jsonData from '../../src/assets/data/tweets.json';
 
+import { Tweet } from './models/tweet';
 import tweetJson from '../../src/assets/apiData/tweets.json';
 import noLocData from '../../src/assets/apiData/tweets_without_location.json'
 import metricJson from '../../src/assets/apiData/metrics.json';
@@ -16,7 +15,7 @@ import { Metric } from './models/metrics';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   tweets : Tweet[] = [];
   tweetsNoLoc: Tweet[] = [];
@@ -28,54 +27,50 @@ export class AppComponent implements OnInit {
   currentLocation: string;
   currentTweet: Tweet;
 
+  showSecond: boolean = false;
+  showThird: boolean = false;
+  showFourth: boolean = false;
+
   title = 'Tweets Distribution based on Domains';
   type = ChartType.TreeMap;
   type2 = ChartType.Scatter;
   treeMapData : Row[] = []
   columnNames = ['Domain', 'Parent', 'Number of Tweets'];
   options = {
-    showTip: true
+    showTip: true,
+    minColor: '#009688',
+    midColor: '#f7f7f7',
+    maxColor: '#ee8100',
   };
-  
-  showSecond: boolean = false;
-  showThird: boolean = false;
-  showFourth: boolean = false;
+  width = 750;
+  height = 550;
 
   geoTitle = 'Tweets from all over the World';
   geoColNames = ["Country","Number of Tweets"];
   geoOptions = {   
     showTip: true,
+    colorAxis: {colors: ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93']},
+    backgroundColor: '#81d4fa',
+    datalessRegionColor: '#f5f5f5',
   };
-
-  width = 750;
-  height = 550;
-
-  sWidth = 400;
-  sHeight = 500;
   geoWidth = 900;
   geoHeight = 480;
-  tWidth = 500;
-  tHeight = 500;
 
   scatterData: Row[] = []
   scatterCols = ['Impression', 'Spam Score']
   scatterOptions = {
-    title: 'Impression Spam Score comparison',
-          hAxis: {title: 'Impression', minValue: 0},
-          vAxis: {title: 'Spam Score', minValue: 0, maxValue: 100},
-          legend: 'none'
-    }
+    chart: {
+      title: 'Impression Spam Score comparison'
+    },
+    hAxis: {title: 'Impression', minValue: 0},
+    vAxis: {title: 'Spam Score', minValue: 0, maxValue: 100},
+    legend: 'none'
+  }
+  sWidth = 400;
+  sHeight = 500;
 
-  gaugeData = [
-    ['Fake Follower',60.5],
-    ['Financial', 30.5],
-    ['Self Declared', 40.5],
-    ['Spammer', 50.5],
-    ['Overall', 45.5]
-  ];
-
+  gaugeData: Row[] = [];
   gaugeCols = ['Label', 'Value']
-
   gaugeOptions = {
     width: 1000, height: 350,
     greenFrom: 0,
@@ -86,12 +81,7 @@ export class AppComponent implements OnInit {
     yellowTo: 50,
     minorTicks: 5, 
   };
-
-  tableData : any = []
-  tableCols = ['S.No', 'Tweet', 'Bot?']
-  tableOptions = {};
-
-  dataSource = [
+  gaugeLegend = [
     {name: 'Fake follower', description: 'Bots purchased to increase follower counts'},
     {name: 'Financial', description: 'Bots that post using cashtags'},
     {name: 'Self declared', description: 'Bots from botwiki.org'},
@@ -100,16 +90,27 @@ export class AppComponent implements OnInit {
   ];
   displayedColumns: string[] = ['name', 'description'];
 
-
-  private barData = [
-      {"Framework": "Vue", "Stars": "166443", "Released": "2014"},
-      {"Framework": "React", "Stars": "150793", "Released": "2013"},
-      {"Framework": "Angular", "Stars": "62342", "Released": "2016"},
-      {"Framework": "Backbone", "Stars": "27647", "Released": "2010"},
-      {"Framework": "Ember", "Stars": "21471", "Released": "2011"},
-  ];
+  tableData : any = []
+  tableCols = ['S.No', 'Tweet', 'Bot?']
+  tableOptions = {};
+  tWidth = 500;
+  tHeight = 500;
 
   constructor(private dialog: MatDialog){
+      this.objectifyTweets()
+      this.generateDomains()
+      this.generateTreeMapData()
+  }
+
+  generateDomains(): void{
+    this.tweets.forEach(t => {
+      t.domains.forEach(d => {
+        this.domains.push(d)
+      });
+    });
+  }
+
+  objectifyTweets(): void {
       tweetJson.forEach(element => {
         this.tweets.push(new Tweet(
           element.id, element.author_id, element.conversation_id, 
@@ -120,19 +121,15 @@ export class AppComponent implements OnInit {
           element.id, element.author_id, element.conversation_id, 
           element.text, element.domains, element.country, new Date(element.created_at), element.organic_metrics))
       });
-      this.tweets.forEach(t => {
-        t.domains.forEach(d => {
-          this.domains.push(d)
-        });
-      });
-      
-      this.treeMapData.push(['Domain', null, 0]);
+  }
+
+  generateTreeMapData(): void {
+    this.treeMapData.push(['Domain', null, 0]);
       this.uniqueDomains = [... new Set(this.domains)];
       [... new Set(this.domains)].forEach(dom => {
         this.treeMapData.push([dom, 'Domain', this.domains.filter((t) => t === dom).length])
       });
   }
-  ngOnInit(): void {}
 
   goBackToFirst(): void{
       this.showSecond = false;
@@ -204,16 +201,11 @@ export class AppComponent implements OnInit {
                                 .some(d => d === this.currentDomain))
       
       filteredTweets.forEach((t, index) => {
-        const scoreList = this.getMetricData(t)
+          const scoreList = this.getMetricData(t)
           this.tableData.push([
             index + 1, t.text, scoreList[1] > 60]);
           this.scatterData.push(scoreList)
         });
-      
-   }
-
-   onScatterPointSelect(params: any): void{
-      console.log(params)
    }
   
    onTableSelect(params: any): void {
@@ -254,7 +246,6 @@ export class AppComponent implements OnInit {
     const popup = this.dialog.open(PopupComponent,{width:'100%',height:'100%',
         enterAnimationDuration:'1000ms',
         exitAnimationDuration:'2000ms',
-        data: this.barData,
           });
     popup.afterClosed().subscribe(() =>{});
     }
