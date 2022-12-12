@@ -5,10 +5,13 @@ import { PopupComponent } from './modals/popup.component';
 import { ChartType, Row } from "angular-google-charts";
 
 import { Tweet } from './models/tweet';
+import { Metric } from './models/metrics';
+
+//importing dataset
 import tweetJson from '../../src/assets/apiData/tweets.json';
 import noLocData from '../../src/assets/apiData/tweets_without_location.json'
 import metricJson from '../../src/assets/apiData/metrics.json';
-import { Metric } from './models/metrics';
+
 
 @Component({
   selector: 'app-root',
@@ -36,6 +39,7 @@ export class AppComponent {
   type2 = ChartType.Scatter;
   treeMapData : Row[] = []
   columnNames = ['Domain', 'Parent', 'Number of Tweets'];
+  // setting configuration options for Tree map chart
   options = {
     showTip: true,
     minColor: '#009688',
@@ -47,9 +51,10 @@ export class AppComponent {
 
   geoTitle = 'Tweets from all over the World';
   geoColNames = ["Country","Number of Tweets"];
+   // setting configuration options for Geo chart
   geoOptions = {   
     showTip: true,
-    colorAxis: {colors: ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93']},
+    colorAxis: {colors: ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93']}, // color palette 
     backgroundColor: '#81d4fa',
     datalessRegionColor: '#f5f5f5',
   };
@@ -58,6 +63,8 @@ export class AppComponent {
 
   scatterData: Row[] = []
   scatterCols = ['Impression', 'Spam Score']
+
+  // setting configuration options for TScatter chart
   scatterOptions = {
     chart: {
       title: 'Impression Spam Score comparison'
@@ -71,6 +78,8 @@ export class AppComponent {
 
   gaugeData: Row[] = [];
   gaugeCols = ['Label', 'Value']
+
+  // setting configuration options for Gauge chart
   gaugeOptions = {
     width: 1000, height: 350,
     greenFrom: 0,
@@ -97,11 +106,12 @@ export class AppComponent {
   tHeight = 500;
 
   constructor(private dialog: MatDialog){
-      this.objectifyTweets()
-      this.generateDomains()
+      this.objectifyTweets() 
+      this.generateDomains()  
       this.generateTreeMapData()
   }
 
+  //data transformation: grouping data based on domains
   generateDomains(): void{
     this.tweets.forEach(t => {
       t.domains.forEach(d => {
@@ -110,6 +120,7 @@ export class AppComponent {
     });
   }
 
+  //constructing the dataset in the form of array of Tweet objects.
   objectifyTweets(): void {
       tweetJson.forEach(element => {
         this.tweets.push(new Tweet(
@@ -123,6 +134,7 @@ export class AppComponent {
       });
   }
 
+  // for generating input data for Tree map chart
   generateTreeMapData(): void {
     this.treeMapData.push(['Domain', null, 0]);
       this.uniqueDomains = [... new Set(this.domains)];
@@ -131,17 +143,20 @@ export class AppComponent {
       });
   }
 
+  // to navigate back to Tree map chart
   goBackToFirst(): void{
       this.showSecond = false;
       this.type = ChartType.TreeMap
   }
 
+  // event handling on Tree map chart
   onSelect(params: any):void {
       this.showSecond = true;
       this.type = ChartType.GeoChart
       this.generateGeoData(params)
    }
 
+  // for generating input data for Geo chart
   generateGeoData(param: any): void {
       this.currentDomain = String(this.treeMapData[param.selection[0].row][0]);
       const locations: string[] = []
@@ -153,12 +168,14 @@ export class AppComponent {
             }
           });
       });
+      // filtering data with no location
       [... new Set(locations)].forEach(l => {
         this.tweetsByLocation.push([
           l, locations.filter((t) => t === l).length]);
       });
    }
   
+  // handling data with no location
   getNoLocData(): void{
       this.showThird = true;
       const currentNoLocTweets = this.tweetsNoLoc.filter(t => t.domains.some(d => d === this.currentDomain))
@@ -166,12 +183,14 @@ export class AppComponent {
       this.generateNoLocTableData(currentNoLocTweets)
   }
 
+  // event handling on Geo chart
   onGeoSelect(params: any): void {
       this.showThird = true;
       this.type = ChartType.Table
-      this.generateTableData(params)
+      this.generateTableScatterData(params)
    }
 
+   // for handle Tweet data with no geo location
    generateNoLocTableData(tweets: Tweet[]): void {
       this.scatterData = []
       this.tableData = []
@@ -183,6 +202,7 @@ export class AppComponent {
       });
    }
 
+   // getting metric data for a given Tweet
    getMetricData(t: Tweet):[number, number]{
       let overallSpamScore = 0
       Object.entries(metricJson).forEach(b => {
@@ -193,7 +213,8 @@ export class AppComponent {
       return [t.organicMetrics.impression_count, overallSpamScore]
    }
 
-   generateTableData(param: any): void {
+   // for generating input data for Table chart and Scatter Chart
+   generateTableScatterData(param: any): void {
       this.scatterData = []
       this.tableData = []
       this.currentLocation = String(this.tweetsByLocation[param.selection[0].row][0]);
@@ -208,12 +229,14 @@ export class AppComponent {
         });
    }
   
+   // event handling on Table chart
    onTableSelect(params: any): void {
       this.showFourth = true;
       this.type = ChartType.Gauge
       this.generateGaugeData(params)
    }
 
+   // for generating input data for Gauge chart
    generateGaugeData(param: any): void {
       const tweet = this.tableData[param.selection[0].row][1];
       this.currentTweet = this.tweets.filter(t =>  t.location === this.currentLocation && t.domains
@@ -231,17 +254,20 @@ export class AppComponent {
         ['Overall', this.metricData.overall]
       ]
    }
-  
+
+  // to navigate back to Table chart and Scatter chart
   goBackToThird(): void{
     this.showFourth = false;
     this.type = ChartType.Table
   }
 
+  // to navigate back to Geo chart
   goBackToSecond(): void{
     this.showThird = false;
     this.type = ChartType.GeoChart
   }
-  //this can be used for creating D3 visualizations (Future work)
+
+  // this can be used for creating D3 visualizations (Future work)
   OpenPopup() {
     const popup = this.dialog.open(PopupComponent,{width:'100%',height:'100%',
         enterAnimationDuration:'1000ms',
